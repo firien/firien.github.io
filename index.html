@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>unnamedmundane</title>
+    <style>
+      :root {
+        --letter-size: 12vw;
+        --green: #6aaa64;
+        --yellow: #c9b458;
+        --background-color: white;
+      }
+      html, body {
+        background-color: var(--background-color);
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin-top: calc((100vh - (var(--letter-size) * 2) - 2vw) / 2);
+      }
+      html, body, li {
+        transition: background-color 0.5s ease-in-out;
+      }
+      ul {
+        width: 100vw;
+        display: block;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        white-space: nowrap;
+      }
+      li {
+        font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", monospace;
+        font-size: var(--letter-size);
+        text-transform: uppercase;
+        display: inline-block;
+        width: var(--letter-size);
+        height: var(--letter-size);
+        line-height: var(--letter-size);
+        text-align: center;
+        color: white;
+        margin: 0.5vw;
+      }
+      .present {
+        background-color: var(--yellow);
+      }
+      .correct {
+        background-color: var(--green);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --green: #538d4e;
+          --yellow: #b59f3b;
+          --background-color: #333;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li class="present">u</li>
+      <li class="present">n</li>
+      <li class="correct">n</li>
+      <li class="present">a</li>
+      <li class="present">m</li>
+      <li class="present">e</li>
+      <li class="present">d</li>
+    </ul>
+    <ul>
+      <li class="correct">m</li>
+      <li class="correct">u</li>
+      <li class="correct">n</li>
+      <li class="correct">d</li>
+      <li class="correct">a</li>
+      <li class="correct">n</li>
+      <li class="correct">e</li>
+    </ul>
+  </body>
+</html>
